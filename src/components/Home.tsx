@@ -28,7 +28,7 @@ const Home = () => {
 
   onMount(() => {
     fetchInfo();
-    fetch("https://lisna.jp/api/commands")
+    fetch("https://api.lisna.jp/commands")
       .then((response) => {
         if (!response.ok) {
           throw new Error("API request failed");
